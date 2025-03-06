@@ -3,10 +3,11 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  root: "src", // Set src as the root directory
   build: {
-    outDir: "dist",
+    outDir: "../dist",
     rollupOptions: {
-      input: "src/main.jsx" // Ensure Vite recognizes main.jsx as the entry file
+      input: "index.jsx", // This must match the entry file
     },
   },
 });
