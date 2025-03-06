@@ -3,13 +3,12 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  esbuild: {
-    jsxInject: `import React from 'react'`,
-  },
   build: {
     outDir: "dist",
     rollupOptions: {
-      input: "public/index.html",
+      input: {
+        main: "src/main.jsx" // Explicitly define the entry file
+      },
     },
   },
 });
