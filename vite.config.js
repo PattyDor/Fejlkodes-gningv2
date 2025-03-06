@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     rollupOptions: {
-      input: "./src/index.jsx", // Explicitly set the entry file
+      input: "public/index.html", // Explicitly tells Vite to use this as the entry file
     },
   },
 });
