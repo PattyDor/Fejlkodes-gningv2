@@ -1,5 +1,5 @@
 function App() {
-  console.log("🚀 React App is Running!");
+  console.log("🚀 React is Running!");
   return (
     <div>
       <h1 style={{ color: "red" }}>🚀 React is Working!</h1>
