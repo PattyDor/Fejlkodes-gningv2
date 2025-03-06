@@ -5,5 +5,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "dist",
+    rollupOptions: {
+      input: "public/index.html", // Ensure Vite knows to use index.html
+    },
   },
 });
