@@ -11,6 +11,11 @@ if (!rootElement) {
   console.error("❌ No root element found!");
 } else {
   console.log("✅ React Mounted Successfully!");
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(<App />);
+  try {
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(<React.StrictMode><App /></React.StrictMode>);
+  } catch (error) {
+    console.error("❌ React Mounting Failed!", error);
+    document.body.innerHTML += `<h1 style='color: red;'>❌ React Mounting Failed!</h1>`;
+  }
 }
