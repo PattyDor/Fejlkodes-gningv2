@@ -13,8 +13,5 @@
   },
   "devDependencies": {
     "vite": "^6.2.0",
-    "eslint": "^9.21.0",
-    "eslint-plugin-react": "^7.34.0",
-    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
