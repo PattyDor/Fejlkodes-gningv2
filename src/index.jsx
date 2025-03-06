@@ -4,10 +4,12 @@ import App from "./App";
 
 console.log("🔄 React is Attempting to Mount!");
 
+document.body.innerHTML += "<h1 style='color: blue;'>🛠️ Debug: `index.jsx` executed</h1>";
+
 const rootElement = document.getElementById("root");
 
 if (!rootElement) {
-  document.body.innerHTML = "<h1 style='color: red;'>❌ Error: Root element not found</h1>";
+  document.body.innerHTML += "<h1 style='color: red;'>❌ Error: Root element not found</h1>";
   console.error("❌ No root element found!");
 } else {
   console.log("✅ React Mounted Successfully!");
