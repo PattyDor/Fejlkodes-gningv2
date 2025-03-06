@@ -1,10 +1,5 @@
 function App() {
-  return (
-    <div>
-      <h1>Fejlkodesøgning</h1>
-      <p>If you see this, React is working!</p>
-    </div>
-  );
+  return <h1>🚀 React is Working!</h1>;
 }
 
 export default App;
